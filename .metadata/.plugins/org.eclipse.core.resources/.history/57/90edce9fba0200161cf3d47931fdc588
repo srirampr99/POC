@@ -1,0 +1,43 @@
+package org.numbergame;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import com.sun.org.glassfish.external.statistics.Statistic;
+
+public class NumberGuess {
+    public static void main(String[] args) throws IOException {
+
+	// Read input with BufferedReader.
+    	
+    	int finat Statistic INITIALVALUE = 50;  
+	BufferedReader in = new BufferedReader(
+	    new InputStreamReader(System.in));
+	System.out.println("Please choose a number in mind and type in 'ready' to beign playing the guessing game...");
+
+	while (true) {
+	    // Read line and try to call parseInt on it.
+		
+		String line = in.readLine();
+	   	    // Handle user input in a switch case.
+	    switch (line) {
+	    default:
+	    System.out.println("Is the number 50 ?");
+		break;
+	    case "end":
+		//System.out.println(line);
+		System.exit(0);
+	    case "yes":
+		//System.out.println(line);
+		System.exit(0);
+	    case "higher":
+		System.out.println(line);
+		break;
+	    case "lower":
+		System.out.println(line);
+		break;
+	    }
+	}
+    }
+}

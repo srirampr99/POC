@@ -1,0 +1,47 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+	default-init-method="init"
+	default-destroy-method="destroy">
+ 
+	<bean id="restaurantBean" class="com.springcore.Restaurant" scope="singleton" >
+	<property name="welcomeNote" value="${welcomeNote}" />
+	<property name="restaurantWaiterList" >
+	<list>
+	<value>Mr. A</value>
+	<value>Mr. B</value>
+	<value>Mr. C</value>
+	<value>Mr. D</value>
+	<value>Mr. E</value>
+	</list>
+	</property>
+	
+ 	</bean>
+ 	
+ 	<bean id="restaurantDIConstructorBean" class="com.springcore.RestaurantDIConstructor">
+	<constructor-arg ref="teaBean" />
+ 	</bean>
+ 	
+ 	<bean id="restaurantDISetterBean" class="com.springcore.RestaurantDISetter">
+	<property name="iHotDrinkInt" ref="teaBean" />
+ 	</bean>
+ 	
+ 	<bean id="teaBean" class="com.springcore.Tea">
+	</bean>
+ <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+	<bean class="com.springcore.DemoBeanPostProcessor1">
+	</bean>
+	<bean class="com.springcore.DemoBeanPostProcessor2">
+	</bean>
+<!--  	
+		<bean class="com.springcore.DemoBeanFactoryPostProcessor">
+	</bean>
+-->	
+ 	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<value>classpath:spring.properties</value>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,14 @@
+package org.numbergame;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NumberGuessJUnit {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [20/May/2015:22:19:22 +0530] "GET / HTTP/1.1" 200 11418
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:19:25 +0530] "GET /FirstSpringMVCProject/ HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:19:53 +0530] "GET /FirstSpringMVCProject/StudentAdmission HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:20:15 +0530] "GET /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 405 1045
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:20:30 +0530] "GET /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 405 1045
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:21:22 +0530] "GET /FirstSpringMVCProject/AdmissionForm.html HTTP/1.1" 405 1045
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:24:17 +0530] "GET /FirstSpringMVCProject/admissionForm.html HTTP/1.1" 200 415
+0:0:0:0:0:0:0:1 - - [20/May/2015:22:24:40 +0530] "POST /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 200 152
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:02:25 +0530] "GET /FirstSpringMVCProject/admissionForm.html HTTP/1.1" 200 415
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:02:37 +0530] "POST /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 200 370
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:03:37 +0530] "GET /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 405 1045
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:03:45 +0530] "GET /FirstSpringMVCProject/admissionForm.html HTTP/1.1" 200 415
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:03:55 +0530] "POST /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 200 368
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:04:57 +0530] "GET /FirstSpringMVCProject/admissionForm.html HTTP/1.1" 200 415
+0:0:0:0:0:0:0:1 - - [20/May/2015:23:05:11 +0530] "POST /FirstSpringMVCProject/submitAdmissionForm.html HTTP/1.1" 200 375

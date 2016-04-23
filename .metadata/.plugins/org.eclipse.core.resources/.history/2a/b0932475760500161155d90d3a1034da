@@ -1,0 +1,17 @@
+package org.numbergame;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NumberGuessJUnit {
+
+	@Test
+	public void testNumberGuess() {
+		NumberGuess numberGuess = new NumberGuess();
+		numberGuess.main(args);
+		
+		//fail("Not yet implemented");
+	}
+
+}

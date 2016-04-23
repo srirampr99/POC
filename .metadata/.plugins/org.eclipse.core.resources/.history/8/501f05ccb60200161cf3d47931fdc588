@@ -1,0 +1,38 @@
+package org.numbergame;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class NumberGuess {
+    public static void main(String[] args) throws IOException {
+
+	// Read input with BufferedReader.
+	BufferedReader in = new BufferedReader(
+	    new InputStreamReader(System.in));
+
+	while (true) {
+	    // Read line and try to call parseInt on it.
+	    String line = in.readLine();
+	    int result;
+	    try {
+		result = Integer.parseInt(line);
+	    } catch (NumberFormatException exception) {
+		result = 0;
+	    }
+
+	    // Handle user input in a switch case.
+	    switch (result) {
+	    default:
+		System.out.println("Default");
+		break;
+	    case 1:
+		System.out.println("One");
+		break;
+	    case 2:
+		System.out.println("Two");
+		break;
+	    }
+	}
+    }
+}
